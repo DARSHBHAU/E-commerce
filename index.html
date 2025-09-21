@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="search-recom-container">
+        <div class="recom-heading">
+            <h2>Popular Categories</h2>
+        </div>
+        <div class="recom-anchors-wrapper">
+            <div class="recom-anchors">
+                <a href="#">
+                    <img src="assets/categories/womens-sweater.png" alt="women's sweater">
+                    <div class="recom-anchor-sub-header">
+                        <h3>Women's Sweater</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="recom-anchors">
+                <a href="#">
+                    <img src="assets/categories/womens-bottoms.png" alt="women's bottom">
+                    <div class="recom-anchor-sub-header">
+                        <h3>Women's Bottom</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="recom-anchors">
+                <a href="#">
+                    <img src="assets/categories/womens-boots.png" alt="women's boots">
+                    <div class="recom-anchor-sub-header">
+                        <h3>Women's Boots</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="recom-anchors">
+                <a href="#">
+                    <img src="assets/categories/mens-bestseller.png" alt="Men's Best-Seller">
+                    <div class="recom-anchor-sub-header">
+                        <h3>Men's Best-Seller</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="nav-links-left">
+            <a href="#">Women</a>
+            <a href="#">Men</a>
+            <a href="about.html">About</a>
+            <a href="#">Everworld Stories</a>
+        </div>
+
+        <div class="logo">
+            <img src="assets/icons/logo.svg" alt="Logo">
+        </div>
+
+        <div class="nav-links-right">
+            <button class="icons" id="search-btn"><img src="assets/icons/search-icon.svg" alt="search"></button>
+            <a class="icons" href="#"><img src="assets/icons/account-icon.svg" alt="account"></a>
+            <a class="icons" href="#"><img src="assets/icons/cart-icon.svg" alt="cart"></a>
+        </div>
+    </div>
+
+    <div class="sub-nav">
+        <a href="#">Holiday Giftings</a>
+        <a href="#">Best-Sellers</a>
+        <a href="#">New-Arrivals</a>
+        <a href="#">Clothings</a>
+        <a href="#">Tops & Sweaters</a>
+        <a href="#">Pants & Jeans</a>
+        <a href="#">Outerwear</a>
+        <a href="#">Shoes & Bags</a>
+        <a href="#">Sale</a>
+    </div>
+
+    <div class="search-container" id="search-container" style="display: none;">
+        <input class="search-inp" placeholder="Search">
+        <button class="search-cancel-btn" id="search-cancel">Cancel</button>
+    </div>
+
+    <div class="main-content" id="main-content">
+        <div class="hero">
+            <div class="x-info">
+                <h1>Your Cozy Era</h1>
+                <h2>Get peak comfy-chic with new winter essentials</h2>
+                <div class="hero-btn">
+                    <a href="#">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>Shop By Category</h2>
+            <a href="#">
+                <img src="assets/categories/shirts-category.png" alt="Shirts">
+                <p>SHIRTS</p>
+            </a>
+            <a href="#">
+                <img src="assets/categories/denims-category.png" alt="Denims">
+                <p>DENIMS</p>
+            </a>
+            <a href="#">
+                <img src="assets/categories/tees-category.png" alt="Tees">
+                <p>TEES</p>
+            </a>
+            <a href="#">
+                <img src="assets/categories/pants-category.png" alt="Pants">
+                <p>PANTS</p>
+            </a>
+            <a href="#">
+                <img src="assets/categories/sweaters-category.png" alt="Sweaters">
+                <p>SWEATERS</p>
+            </a>
+            <a href="#">
+                <img src="assets/categories/outerwears-category.png" alt="Outerwears">
+                <p>OUTERWEARS</p>
+            </a>
+        </div>
+
+        <div class="buyer-sec">
+            <div class="buyer-card-container" id="new">
+                <h1>New Arrivals</h1>
+                <div class="buyer-btn">
+                    <a href="#">SHOP THE LATEST</a>
+                </div>
+            </div>
+
+            <div class="buyer-card-container" id="best">
+                <h1>Best-Sellers</h1>
+                <div class="buyer-btn">
+                    <a href="#">SHOP YOUR FAVOURITES</a>
+                </div>
+            </div>
+
+            <div class="buyer-card-container" id="holiday">
+                <h1>The Holiday Outfit</h1>
+                <div class="buyer-btn">
+                    <a href="#">SHOP OCCASION</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mission">
+            <div class="mission-info">
+                <h2>We're on a Mission to Clean Up the Industry</h2>
+                <p>Read about our progress in our latest Impact Report</p>
+            </div>
+            <div class="mission-btn">
+                <a href="#">LEARN MORE</a>
+            </div>
+        </div>
+
+        <div class="rev-btn-included">
+            <button class="rev-btn" id="prev-btn">
+                <img src="assets/icons/arrow-left.png" alt="left-btn">
+            </button>
+
+            <div class="review" id="review-1">
+                <div class="review-given">
+                    <div class="header-rev">
+                        <h3>People are Talking</h3>
+                    </div>
+                    <div class="rev-submitted">
+                        <div class="string-star-rev">
+                            <div class="star-review">
+                                <img src="assets/icons/star-rating.png" alt="star" class="review-star"><img
+                                    src="assets/icons/star-rating.png" alt="star" class="review-star"><img
+                                    src="assets/icons/star-rating.png" alt="star" class="review-star"><img
+                                    src="assets/icons/star-rating.png" alt="star" class="review-star"><img
+                                    src="assets/icons/star-rating.png" alt="star" class="review-star">
+                            </div>
+                            <div class="string-rev">
+                                <p>"Love this shirt! Fits perfectly and the fabric is thick without being stiff."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rev-submitter">
+                        <h4>--JonSnSF<span>The Heavyweight Overshirt</span></h4>
+                    </div>
+                </div>
+                <div class="submitter-photo">
+                    <img src="assets/reviews/reviewer-photo.png" alt="person">
+                </div>
+            </div>
+
+            <div class="review" id="review-2" style="display: none;">
+                <div class="review-given">
+                    <div class="header-rev">
+                        <h3>People are Talking</h3>
+                    </div>
+                    <div class="rev-submitted">
+                        <div class="string-star-rev">
+                            <div class="star-review">
+                                <img src="assets/icons/star-rating.png" alt="star" class="review-star"><img
+                                    src="assets/icons/star-rating.png" alt="star" class="review-star"><img
+                                    src="assets/icons/star-rating.png" alt="star" class="review-star"><img
+                                    src="assets/icons/star-rating.png" alt="star" class="review-star"><img
+                                    src="assets/icons/star-rating.png" alt="star" class="review-star">
+                            </div>
+                            <div class="string-rev">
+                                <p>"Amazing quality and super comfortable. Will definitely buy again!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rev-submitter">
+                        <h4>--Sarah_M<span>The Classic Tee</span></h4>
+                    </div>
+                </div>
+                <div class="submitter-photo">
+                    <img src="assets/reviews/reviewer-photo.png" alt="person">
+                </div>
+            </div>
+
+            <div class="review" id="review-3" style="display: none;">
+                <div class="review-given">
+                    <div class="header-rev">
+                        <h3>People are Talking</h3>
+                    </div>
+                    <div class="rev-submitted">
+                        <div class="string-star-rev">
+                            <div class="star-review">
+                                <img src="assets/icons/star-rating.png" alt="star" class="review-star"><img
+                                    src="assets/icons/star-rating.png" alt="star" class="review-star"><img
+                                    src="assets/icons/star-rating.png" alt="star" class="review-star"><img
+                                    src="assets/icons/star-rating.png" alt="star" class="review-star">
+                            </div>
+                            <div class="string-rev">
+                                <p>"Perfect fit and great material. Exceeded my expectations completely."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rev-submitter">
+                        <h4>--Mike_R<span>The Denim Jacket</span></h4>
+                    </div>
+                </div>
+                <div class="submitter-photo">
+                    <img src="assets/reviews/reviewer-photo.png" alt="person">
+                </div>
+            </div>
+
+            <div class="review" id="review-4" style="display: none;">
+                <div class="review-given">
+                    <div class="header-rev">
+                        <h3>People are Talking</h3>
+                    </div>
+                    <div class="rev-submitted">
+                        <div class="string-star-rev">
+                            <div class="star-review">
+                                <img src="assets/icons/star-rating.png" alt="star" class="review-star"><img
+                                    src="assets/icons/star-rating.png" alt="star" class="review-star"><img
+                                    src="assets/icons/star-rating.png" alt="star" class="review-star"><img
+                                    src="assets/icons/star-rating.png" alt="star" class="review-star">
+                            </div>
+                            <div class="string-rev">
+                                <p>"Stylish and comfortable. The best purchase I've made this year!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rev-submitter">
+                        <h4>--Emma_K<span>The Winter Sweater</span></h4>
+                    </div>
+                </div>
+                <div class="submitter-photo">
+                    <img src="assets/reviews/reviewer-photo.png" alt="person">
+                </div>
+            </div>
+
+            <button class="rev-btn" id="next-btn">
+                <img src="assets/icons/arrow-right.png" alt="right-btn">
+            </button>
+            
+            <div class="rev-btn-controls">
+                <button class="rev-btn" id="prev-btn-mobile">
+                    <img src="assets/icons/arrow-left.png" alt="left-btn">
+                </button>
+                <button class="rev-btn" id="next-btn-mobile">
+                    <img src="assets/icons/arrow-right.png" alt="right-btn">
+                </button>
+            </div>
+        </div>
+
+        <div class="carousel-indicators">
+            <span class="indicator active" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+            <span class="indicator" data-slide="3"></span>
+            <span class="indicator" data-slide="4"></span>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="extra-info">
+            <div class="extra-info-sub-section">
+                <h2>Our Holiday Gift Picks</h2>
+                <img src="assets/info/holiday-gifts.png" alt="holiday-gifts">
+                <p>The best presents for everyone on your list.</p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div class="extra-info-sub-section">
+                <h2>Cleaner Fashion</h2>
+                <img src="assets/info/cleaner-fashion.png" alt="cleaner-fashion">
+                <p>See the sustainability efforts behind each of our products.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="out-promo">
+            <div class="sec-promo">
+                <img src="assets/promo/free-shipping.png" alt="complementary shipping">
+                <h3>Complimentary Shipping</h3>
+                <p>Enjoy free shipping on U.S. orders over $100.</p>
+            </div>
+
+            <div class="sec-promo">
+                <img src="assets/promo/consciously-crafted.png" alt="Consciously Crafted">
+                <h3>Consciously Crafted</h3>
+                <p>Designed with you and planet in mind.</p>
+            </div>
+
+            <div class="sec-promo">
+                <img src="assets/promo/store-locations.png" alt="Come Say Hi">
+                <h3>Come Say Hi</h3>
+                <p>We have 11 stores accross U.S.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-info-wrapper">
+                <div class="footer-info">
+                    <h4>Account</h4>
+                    <a href="#">Login</a>
+                    <a href="#">Sign Up</a>
+                    <a href="#">Redeem a Gift Card</a>
+                </div>
+
+                <div class="footer-info">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Environmental Initiatives</a>
+                    <a href="#">Factories</a>
+                    <a href="#">DEI</a>
+                    <a href="#">Careers</a>
+                    <a href="#">International</a>
+                    <a href="#">Accessibility</a>
+                </div>
+
+                <div class="footer-info">
+                    <h4>Get Help</h4>
+                    <a href="#">Help Centre</a>
+                    <a href="#">Return Policy</a>
+                    <a href="#">Shipping Info</a>
+                    <a href="#">Bulk Orders</a>
+                </div>
+
+                <div class="footer-info">
+                    <h4>Connect</h4>
+                    <a href="#">Youtube</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Affiliates</a>
+                    <a href="#">Out Stores</a>
+                </div>
+
+                <div class="mail-contact">
+                    <input placeholder="Email Address" id="footer-inp">
+                    <button id="footer-btn"><img src="assets/icons/submit-arrow.png"></button>
+                </div>
+            </div>
+
+            <div class="footer-copyright-info-wrapper">
+                <div class="footer-info-more">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Do not Share or Sell My Personal Information</a>
+                    <a href="#">CS Supply Chain Transparency</a>
+                    <a href="#">Vendor Code of Conduct</a>
+                    <a href="#">Sitemap-Pages</a>
+                    <a href="#">Privacy Products</a>
+                </div>
+
+                <div class="copyright-sec">
+                    <p>@ 2023 All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

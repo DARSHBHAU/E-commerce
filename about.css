@@ -1,0 +1,1048 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato";
+    box-sizing: border-box;
+}
+
+a {
+    color: #737373;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5rem;
+    height: 3.75rem;
+    border-bottom: 0.0625rem solid #e0e0e0;
+    background-color: #ffffff;
+    z-index: 100;
+}
+
+.logo {
+    position: absolute;
+    left: 48.5%;
+    transform: translateX(-50%);
+}
+
+.nav-links-left {
+    display: flex;
+    gap: 1.25rem;
+    font-size: smaller;
+}
+
+.nav-links-right {
+    display: flex;
+    gap: 0.9375rem;
+}
+
+.icons img {
+    height: 2.625rem;
+}
+
+.icons {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.nav-links-left a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo img {
+    width: 9.375rem;
+    height: auto;
+}
+
+.nav-links-left a {
+    position: relative;
+}
+
+.nav-links-left a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -1.25rem;
+    left: 0;
+    width: 100%;
+    height: 0.21875rem;
+    background-color: black;
+}
+
+.sub-nav {
+    height: 3.75rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 0 2.5rem;
+    background-color: #ffffff;
+    border-bottom: 0.0625rem solid #f0f0f0;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.sub-nav a {
+    font-size: smaller;
+    text-decoration: none;
+    color: black;
+}
+
+.search-inp {
+    width: 100%;
+    max-width: 678px;
+    height: 25px;
+    border: none;
+    background: #F5F4F4;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.search-cancel-btn {
+    width: 70px;
+    height: 52px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    max-width: 100vw;
+    box-sizing: border-box;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+.search-container.show {
+    transform: translateY(0);
+}
+
+.main-content {
+    transition: transform 0.3s ease;
+}
+
+.main-content.hide {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.search-recom-container {
+    padding: 2rem;
+    text-align: center;
+    display: none;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+.search-recom-container.show {
+    display: block;
+    transform: translateY(0);
+}
+
+.recom-heading {
+    margin-bottom: 1.5rem;
+}
+
+.recom-heading h2 {
+    font-weight: 300;
+}
+
+.recom-anchors-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.recom-anchors {
+    text-align: center;
+}
+
+.recom-anchors a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.recom-anchors img {
+    width: 257px;
+    height: 374px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 480px) {
+    .recom-anchors img {
+        width: 120px;
+        height: 180px;
+    }
+
+    .recom-anchor-sub-header h3 {
+        font-size: 0.8rem;
+    }
+}
+
+.recom-anchor-sub-header h3 {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.hero {
+    height: 691px;
+    background-image: url('./about-images/hero-about.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 2.5rem;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+    line-height: 1.1;
+    text-align: center;
+    word-spacing: 0.2em;
+}
+
+.hero-header-info p {
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+.info-1 {
+    height: 525px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-1 {
+    height: 525px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
+.info-1 p {
+    text-align: center;
+    color: black;
+    font-size: 1.7rem;
+    padding: 56px 258px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+@media (max-width: 480px) {
+    .info-1 {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .info-1 p {
+        font-size: 1rem;
+        padding: 0;
+        line-height: 1.4;
+    }
+
+    .hero {
+        height: 400px;
+        padding: 0 0.5rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+        line-height: 1.1;
+    }
+
+    .hero-header-info p {
+        font-size: 0.9rem;
+    }
+}
+
+.ethical-approach {
+    display: flex;
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+    background-color: #e6ded8;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .ethical-approach {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .ethical-approach-container {
+        width: 100%;
+        padding: 3rem 1rem;
+        box-sizing: border-box;
+        text-align: center;
+        order: 1;
+    }
+
+    .ethical-approach-img,
+    .ethical-approach-img2 {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        order: 2;
+    }
+
+    .info-first {
+        flex-direction: column;
+    }
+
+    .ethical-approach-header,
+    .ethical-approach-info {
+        text-align: center;
+    }
+
+    .ethical-approach-header h1,
+    .ethical-approach-header h4 {
+        text-align: center;
+    }
+
+    .price-comparison {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .price-compare-img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .price-compare-info-container {
+        width: 100%;
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+    }
+
+    .more-sec-anchors {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .more-sec {
+        padding: 2rem 1rem;
+        height: auto;
+    }
+
+    .banner {
+        width: 100%;
+        max-width: 100vw;
+        height: 300px;
+    }
+}
+
+.ethical-approach-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 6rem;
+}
+
+.ethical-approach-img {
+    width: 50%;
+    height: 100%;
+    background-image: url('./about-images/ethical.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ethical-approach-info p {
+    text-align: left;
+    font-weight: 400;
+    font-size: large;
+}
+
+.ethical-approach-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.ethical-approach-header h1,
+.ethical-approach-header h4 {
+    text-align: left;
+}
+
+.ethical-approach-header h1 {
+    font-size: 3rem;
+    font-weight: 450;
+}
+
+.banner {
+    height: 637px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
+.about-banner1 {
+    background-image: url('./about-images/about-banner1.png');
+}
+
+.ethical-approach-img2 {
+    width: 50%;
+    height: 100%;
+    background-image: url('./about-images/about-quality.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info-first .ethical-approach-header h1 {
+    width: 200px;
+    word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .info-first .ethical-approach-header h1 {
+        width: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-first .ethical-approach-header h1 {
+        width: auto;
+        white-space: nowrap;
+    }
+}
+
+.about-banner2 {
+    background-image: url('./about-images/about-banner2.png');
+}
+
+.price-comparison {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-compare-img {
+    background-image: url('./about-images/about-compare.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 50%;
+}
+
+.price-compare-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 0 70px;
+    box-sizing: border-box;
+}
+
+.price-compare-header {
+    margin-bottom: 16px;
+}
+
+.price-compare-header h1 {
+    font-size: 3rem;
+    font-weight: 450;
+    line-height: 1.2;
+}
+
+.price-compare-header h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.price-compare-info p {
+    font-weight: 400;
+    font-size: large;
+}
+
+.more-sec-anchors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.more-sec-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.more-sec {
+    height: 453px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 82px 2rem;
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
+.more-sec-anchors a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.more-sec-container h1 {
+    font-weight: 400;
+}
+
+.footer {
+    background-color: #F5F4F4;
+}
+
+.footer-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 72px;
+    padding-top: 40px;
+    gap: 20px;
+}
+
+
+
+@media (max-width: 480px) {
+    .footer-info-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+        padding-top: 20px;
+    }
+
+    .footer-info {
+        padding: 10px;
+    }
+
+    .footer-info h4 {
+        margin-bottom: 15px;
+        font-size: 1rem;
+    }
+
+    .footer-info a {
+        font-size: 0.875rem;
+    }
+
+    #footer-inp {
+        max-width: 250px;
+        height: 45px;
+        font-size: 0.875rem;
+    }
+
+    #footer-btn {
+        height: 46px;
+        width: 46px;
+    }
+
+    .footer-info-more {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding: 0 15px;
+    }
+
+    .footer-info-more a {
+        font-size: 0.75rem;
+    }
+}
+
+.footer-info {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footer-info h4 {
+    margin-bottom: 20px;
+}
+
+.mail-contact {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#footer-inp {
+    border: 1px solid #DDDBDC;
+    width: 300px;
+    height: 45px;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    background-color: white;
+}
+
+#footer-btn {
+    padding: 0.75rem;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    height: 46px;
+    width: 46px;
+}
+
+#footer-btn img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-info-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-info-more a {
+    font-size: smaller;
+}
+
+.copyright-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}
+
+.copyright-sec p {
+    font-size: smaller;
+    color: #737373;
+}
+
+.footer-copyright-info-wrapper {
+    padding: 0 72px;
+    padding-bottom: 20px;
+}
+
+/* Consolidated 786px Responsive Styles */
+@media (max-width: 786px) {
+    .nav {
+        padding: 0 1rem;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .logo {
+        position: static;
+        transform: none;
+        order: 1;
+    }
+
+    .nav-links-left {
+        order: 3;
+        gap: 1rem;
+        font-size: 0.8rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-links-right {
+        order: 2;
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 7rem;
+    }
+
+    .icons img {
+        height: 2rem;
+    }
+
+    .sub-nav {
+        padding: 0.8rem 1.5rem;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+
+    .sub-nav a {
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+
+    .search-container {
+        padding: 1rem 2rem;
+    }
+
+    .search-inp {
+        width: 400px;
+        max-width: 70vw;
+        font-size: 0.95rem;
+        padding: 14px;
+    }
+
+    .search-cancel-btn {
+        width: 60px;
+        height: 48px;
+    }
+
+    .hero {
+        height: 500px;
+        padding: 0 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+        line-height: 1.2;
+    }
+
+    .hero-header-info p {
+        font-size: 1.1rem;
+    }
+
+    .info-1 {
+        height: auto;
+        padding: 3rem 1rem;
+    }
+
+    .info-1 p {
+        font-size: 1.3rem;
+        padding: 0 2rem;
+        line-height: 1.5;
+    }
+
+    .ethical-approach {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .ethical-approach-container {
+        width: 100%;
+        padding: 4rem 2rem;
+        order: 1;
+        text-align: center;
+    }
+
+    .ethical-approach-img,
+    .ethical-approach-img2 {
+        width: 100%;
+        height: 500px;
+        order: 2;
+    }
+
+    .info-first {
+        flex-direction: column;
+    }
+
+    .ethical-approach-header,
+    .ethical-approach-info {
+        text-align: center;
+    }
+
+    .ethical-approach-header h1,
+    .ethical-approach-header h4 {
+        text-align: center;
+    }
+
+    .ethical-approach-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .ethical-approach-header h4 {
+        font-size: 0.95rem;
+    }
+
+    .ethical-approach-info p {
+        font-size: 1.1rem;
+    }
+
+    .banner {
+        height: 450px;
+    }
+
+    .price-comparison {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .price-compare-img {
+        width: 100%;
+        height: 600px;
+    }
+
+    .price-compare-info-container {
+        width: 100%;
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+
+    .price-compare-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .price-compare-header h4 {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+
+    .price-compare-info p {
+        font-size: 1.1rem;
+    }
+
+    .more-sec {
+        padding: 3rem 1.5rem;
+        height: auto;
+    }
+
+    .more-sec-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .more-sec-anchors {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-info-wrapper {
+        flex-direction: column;
+        padding: 0 72px;
+        padding-top: 30px;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .footer-info {
+        padding: 15px;
+        text-align: center;
+    }
+
+    #footer-inp {
+        width: 300px;
+        height: 48px;
+    }
+
+    #footer-btn {
+        height: 49px;
+        width: 49px;
+    }
+
+    .footer-info-more {
+        flex-wrap: wrap;
+        gap: 15px;
+        order: 1;
+    }
+
+    .mail-contact {
+        padding: 15px;
+        justify-content: center;
+        order: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        padding: 0 0.5rem;
+        flex-direction: column;
+        height: auto;
+        gap: 0.4rem;
+        padding-top: 1rem;
+    }
+
+    .logo {
+        position: static;
+        transform: none;
+        order: 1;
+    }
+
+    .nav-links-right {
+        order: 2;
+        justify-content: center;
+    }
+
+    .nav-links-left {
+        gap: 0.4rem;
+        font-size: 0.7rem;
+        order: 3;
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 5.5rem;
+    }
+
+    .icons img {
+        height: 1.8rem;
+    }
+
+    .sub-nav {
+        padding: 0.6rem 1rem;
+        gap: 0.4rem;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+        max-width: 100vw;
+        box-sizing: border-box;
+    }
+
+    .sub-nav a {
+        font-size: 0.65rem;
+        white-space: normal;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .search-container {
+        padding: 0.5rem;
+    }
+
+    .search-inp {
+        max-width: 280px;
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    .search-cancel-btn {
+        width: 50px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+    .nav-links-left a:hover::after {
+        bottom: 0;
+    }
+
+    .banner {
+        height: 250px;
+    }
+
+    .ethical-approach-container {
+        padding: 2rem 1rem;
+        width: 100%;
+    }
+
+    .ethical-approach-header h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .ethical-approach-header h4 {
+        font-size: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .ethical-approach-info p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .ethical-approach-img,
+    .ethical-approach-img2 {
+        height: 250px;
+        width: 100%;
+    }
+
+    .price-compare-img {
+        height: 250px;
+    }
+
+    .price-compare-info-container {
+        padding: 1.5rem 1rem;
+        text-align: center;
+    }
+
+    .price-compare-header h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .price-compare-header h4 {
+        font-size: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .price-compare-info p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .more-sec {
+        padding: 1.5rem 1rem;
+        height: auto;
+    }
+
+    .more-sec-container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .more-sec-anchors {
+        gap: 1.5rem;
+    }
+
+    .more-sec-anchors img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .more-sec-anchors h3 {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+}
